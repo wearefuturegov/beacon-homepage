@@ -1,12 +1,13 @@
-<%# <div class="sign-in-link">
-    <a href="/" title="Sign in to Beacon">Sign in</a>
-</div> %>
+<div class="sign-in-link">
+    <a href="#newsletter_signup" title="Sign up to find out more">Newsletter</a>
+    <%# <a href="/" title="Sign in to Beacon">Sign in</a> %>
+</div>
 <div class="home-panel">
     <div class="home-panel--content">
         <h1><%= image_tag("logo.svg", :alt => "Beacon", :class => "home-panel--logo") %></h1>
         <h2>A multi-agency platform providing a single view of need in a local area</h2>
-    </div>
 
+    
     <div class="home-panel--video">
         <div style="padding:56.25% 0 0 0;position:relative;">
             <iframe src="https://player.vimeo.com/video/288751106?color=3A6CB5&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
@@ -14,31 +15,28 @@
         <script src="https://player.vimeo.com/api/player.js"></script>
     </div>
 
-    <div class="home-panel--content">
-        <div class="home-panel--content---form">
-            <!-- Begin Mailchimp Signup Form -->
-            <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-            <style type="text/css">
-                #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-                /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-                We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-            </style>
+    <div id="newsletter_signup" class="home-panel--content---form">
+        <!-- Begin Mailchimp Signup Form -->
+        <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+            #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+            /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        </style>
 
-            <h3>Sign up to find<br/>out more</h3>
+        <h3>Sign up to find<br/>out more</h3>
 
-            <div id="mc_embed_signup">
-            <form action="https://wearefuturegov.us1.list-manage.com/subscribe/post?u=8164ad56924f0b0739b2e18ed&amp;id=80811802d1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div id="mc_embed_signup_scroll">
-                
-                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email..." required>
-                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8164ad56924f0b0739b2e18ed_80811802d1" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                </div>
-            </form>
+        <div id="mc_embed_signup">
+        <form action="https://wearefuturegov.us1.list-manage.com/subscribe/post?u=8164ad56924f0b0739b2e18ed&amp;id=80811802d1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+            
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email..." required>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8164ad56924f0b0739b2e18ed_80811802d1" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
             </div>
-
-            <!--End mc_embed_signup-->
+        </form>
         </div>
+        <!--End mc_embed_signup-->
     </div>
 </div>

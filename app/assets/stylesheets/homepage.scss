@@ -1,5 +1,7 @@
 @import "variables";
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     background: $blue-light;
     display: flex;
@@ -23,6 +25,7 @@ body {
     a {
         color: $grey;
         font-weight: bold;
+        margin-left: 15px;
 
         &:hover {
             text-decoration: none;
@@ -30,17 +33,16 @@ body {
     }
 }
 .home-panel {
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom: 30px;
     background: $white;
-    // border-bottom: 4px solid rgba($grey, 0.2);
-    box-shadow: 0px 4px 8px transparentize($grey, 0.9);
+    border-bottom: 4px solid rgba($grey, 0.2);
+    // box-shadow: 0px 4px 8px transparentize($grey, 0.9);
     max-width: 960px;
     width: 100%;
     text-align: center;
 
     @media screen and (min-width: $breakpoint-m){
-        margin-top: 50px;
         margin-bottom: 50px;
     }
 
@@ -65,18 +67,27 @@ body {
     }
     .home-panel--content {
         padding: 30px;
-
+        @media screen and (min-width: $breakpoint-m){
+            padding: 50px;
+        }
         .home-panel--content---form {
+            background: $pale;
             max-width: 600px;
             margin: 0 auto;
+            padding: 30px 15px;
+            border-bottom: 4px solid rgba($grey, 0.2);
             @media screen and (min-width: $breakpoint-m){
                 margin-bottom: 30px;
+                padding: 40px 15px;
             }
 
             h3 {
+                font-weight: 500;
                 margin-bottom: 15px;
             }
-
+            #mc_embed_signup {
+                background: $pale;
+            }
             #mce-EMAIL {
                 font-family: $font-stack;
                 border-radius: 0;
@@ -117,8 +128,10 @@ body {
         }
     }
     .home-panel--video {
+        margin: 25px 0;
         @media screen and (min-width: $breakpoint-m){
-            margin: 25px 0;
+            padding: 0 15px;
+            margin: 75px 0;
         }
     }
 }
