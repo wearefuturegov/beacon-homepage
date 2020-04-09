@@ -106,12 +106,14 @@ body {
             }
             #mc-embedded-subscribe {
                 height: 42px;
-                background-color: $blue !important;
+                background-color: $blue;
                 font-weight: bold;
-                border-radius: 0 !important;
-                font-family: $font-stack !important;
+                border-radius: 0;
+                font-family: $font-stack;
                 transition: none;
                 transition: box-shadow 0.23s ease-in-out 0s;
+                -webkit-appearance: none;
+
 
                 @media screen and (min-width: $breakpoint-m){
                     margin-left: -5px;
@@ -122,7 +124,7 @@ body {
                     box-shadow: 0px 0px 0px 4px $yellow;
                 }
                 &:hover {
-                    background: rgba($blue, 0.8) !important;
+                    background: rgba($blue, 0.8);
                 }
             }
         }
